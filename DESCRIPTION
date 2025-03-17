@@ -1,11 +1,29 @@
 Package: seliNDRIx
-Title: What the Package Does (One Line, Title Case)
+Title: Package for Construction of Selection Index 
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    c(person(given = "Raja",
+           family = "TV",
+           role = c("aut", "cre"),
+           email = "venkatesanraja09@gmail.com"), person("Alex", "Rani", email = "ranialex01vet@gmail.com", role = "aut"),person("Gowane", "Gopal", email = "gopalgowane@gmail.com", role = "aut"),person("Vohra", "Vikas", email = "vohravikas@gmail.com", role = "aut"))
+Description: This package is useful for construction of selection index. 
+ This package uses the mixed and random model least squares analysis to estimate the heritabilities of
+ the traits and genetic correlation between the traits.This uses the sire model as it is considered as 
+ random effect. The genetic and phenotypic (co)variances along with the relative economic values are 
+ used to construct the selection index for any number of traits. It also estimates the accuracy of the
+ index and the genetic gain expected for different traits.      
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Imports:
+    dplyr,
+    psych,
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 3.5)
+LazyData: true
+URL: https://github.com/venkatesanraja/seliNDRIx
+BugReports: https://github.com/venkatesanraja/seliNDRIx/issues
