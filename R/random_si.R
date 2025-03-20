@@ -184,7 +184,7 @@ random_si <- function(data_input, traits, economic_values) {
   ))
 }
 # examples
-data <- read.csv("D:/sl.csv")
+data("data", package = "seliNDRIx")
 
 results <- random_si(data,
                      traits = c("tmy", "py", "fatyield"),
