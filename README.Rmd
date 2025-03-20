@@ -39,7 +39,7 @@ library(seliNDRIx)
 
 # Example using mixed function
 # Read the data
- data <- read.csv("D:/sl.csv")
+ data("data", package = "seliNDRIx")
  # Define your parameters
  traits <- c("tmy", "py", "fatyield")
  fixed <- c("farm", "soc", "poc")
