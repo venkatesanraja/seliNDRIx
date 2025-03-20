@@ -306,7 +306,7 @@ mixed_si <- function(data, traits, fixed, random, economic_values) {
 
 # examples
 # Read the data
-data <- read.csv("D:/sl/sl.csv")
+data("data", package = "seliNDRIx")
 
 # Define your parameters
 traits <- c("tmy", "py", "fatyield")
