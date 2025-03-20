@@ -28,7 +28,7 @@ genetic and phenotypic parameters
 \examples{
 # Example using mixed function
 # Read the data
-data <- read.csv("D:/sl.csv")
+data("data", package = "seliNDRIx")
 # Define your parameters
 traits <- c("tmy", "py", "fatyield")
 fixed <- c("farm", "soc", "poc")
@@ -68,7 +68,7 @@ top20 <- result3 \%>\%
 write.csv(top20, "D:/Top20.csv", row.names = FALSE)
 # Example using random function
 # Read the data
-data <- read.csv("D:/sl.csv")
+data("data", package = "seliNDRIx")
 # Run the analysis
 results2 <- random_si(data,
 traits = c("tmy", "py", "fatyield"),
