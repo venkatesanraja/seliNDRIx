@@ -209,7 +209,7 @@ overall_index <- function(data, SI, traits) {
 }
 
 # Calculate the selection index
-result3 <- overall_index(data, SI, traits)
+# result3 <- overall_index(data, SI, traits)
 
 # Print the result
 # print(result3)
@@ -220,5 +220,5 @@ top20 <- result3 %>%
   slice_head(prop = 0.2)    # Select the top 20%
 
 write.csv(top20, "D:/Top20.csv", row.names = FALSE)
-message("Please ensure that the heritability, phenotypic and genetic correlation estimates are well within their normal range. If any estimate exceeds the range, handle the results with caution.")
+# message("Please ensure that the heritability, phenotypic and genetic correlation estimates are well within their normal range. If any estimate exceeds the range, handle the results with caution.")
 
