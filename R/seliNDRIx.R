@@ -62,7 +62,7 @@
 #' result3 <- overall_index(data, SI, traits)
 
 #' # Print the result
-#' print(result3)
+#' # print(result3)
 
 #' # Select the top 20% of animals with the highest selection index values
 #' top20 <- result3 %>%
@@ -98,7 +98,7 @@
 #' result3 <- overall_index(data, SI, traits)
 
 #' # Print the result
-#' print(result3)
+#' # print(result3)
 
 #' # Select the top 20% of animals with the highest selection index values
 #' top20 <- result3 %>%
