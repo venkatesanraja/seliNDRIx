@@ -27,7 +27,7 @@ library(seliNDRIx)
 
 # Read the data
 
-data \<- read.csv(“D:/sl.csv”) \# Define your parameters traits \<-
+data("data", package = "seliNDRIx") \# Define your parameters traits \<-
 c(“tmy”, “py”, “fatyield”) fixed \<- c(“farm”, “soc”, “poc”) random \<-
 c(“sire”) economic_values \<- c(1, 0.85, 0.65)
 
@@ -49,8 +49,8 @@ result print(result3)
 top20 \<- result3 %\>% arrange(desc(Index)) %\>% \# Sort by Index in
 descending order slice_head(prop = 0.2) \# Select the top 20%
 
-write.csv(top20, “D:/Top20.csv”, row.names = FALSE) \# Example using
-random function \# Read the data data \<- read.csv(“D:/sl.csv”) \# Run
+\# Example using
+random function \# Read the data data \<- data("data", package = "seliNDRIx") \# Run
 the analysis results2 \<- random_si(data, traits = c(“tmy”, “py”,
 “fatyield”), economic_values = c(1, 0.85, 0.65)) results2 \# To
 calculate the overall selection index for each animal SI \<-
@@ -71,8 +71,6 @@ traits)
 \# Select the top 20% of animals with the highest selection index values
 top20 \<- result3 %\>% arrange(desc(Index)) %\>% \# Sort by Index in
 descending order slice_head(prop = 0.2) \# Select the top 20%
-
-write.csv(top20, “D:/Top20.csv”, row.names = FALSE)
 
 What is special about using `README.Rmd` instead of just `README.md`?
 You can include R chunks like so:
