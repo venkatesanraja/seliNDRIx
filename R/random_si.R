@@ -218,7 +218,3 @@ overall_index <- function(data, SI, traits) {
 top20 <- result3 %>%
   arrange(desc(Index)) %>%  # Sort by Index in descending order
   slice_head(prop = 0.2)    # Select the top 20%
-
-write.csv(top20, "D:/Top20.csv", row.names = FALSE)
-# message("Please ensure that the heritability, phenotypic and genetic correlation estimates are well within their normal range. If any estimate exceeds the range, handle the results with caution.")
-
