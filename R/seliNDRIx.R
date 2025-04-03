@@ -69,7 +69,6 @@
 #'  arrange(desc(Index)) %>%  # Sort by Index in descending order
 #'  slice_head(prop = 0.2)    # Select the top 20%
 
-#' write.csv(top20, "D:/Top20.csv", row.names = FALSE)
 #' # Example using random function
 #' # Read the data
 #' data("data", package = "seliNDRIx")
@@ -104,7 +103,5 @@
 #' top20 <- result3 %>%
 #'  arrange(desc(Index)) %>%  # Sort by Index in descending order
 #'  slice_head(prop = 0.2)    # Select the top 20%
-
-#' write.csv(top20, "D:/Top20.csv", row.names = FALSE)
 
 NULL
