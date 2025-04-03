@@ -27,7 +27,7 @@ library(seliNDRIx)
 
 # Read the data
 
-data("data", package = "seliNDRIx") \# Define your parameters traits \<-
+data <- data("data", package = "seliNDRIx") \# Define your parameters traits \<-
 c(“tmy”, “py”, “fatyield”) fixed \<- c(“farm”, “soc”, “poc”) random \<-
 c(“sire”) economic_values \<- c(1, 0.85, 0.65)
 
