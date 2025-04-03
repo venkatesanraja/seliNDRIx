@@ -16,6 +16,6 @@
 #'   \item{tmy}{Total lactation milk yield in Kg}
 #'   \item{py}{The peak yield in Kg}
 #'   \item{afc}{The age at first calving}
-#'   \item{fat}{The average fat percentage}
+#'   \item{fatyield}{The fat yield in Kg}
 
 NULL
